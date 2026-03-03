@@ -1,0 +1,38 @@
+[project]
+name = "rag-sanitizer"
+version = "0.1.0"
+description = "Scan RAG documents for hidden prompt injections, invisible text attacks, and data exfiltration payloads before they enter your vector database."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "KoreShield", email = "oss@koreshield.com" }]
+keywords = ["rag", "llm", "security", "prompt-injection", "vector-database", "langchain", "llamaindex"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Security",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+dependencies = ["pydantic>=2.0"]
+
+[project.optional-dependencies]
+langchain = ["langchain-core>=0.1"]
+llamaindex = ["llama-index-core>=0.10"]
+all = ["langchain-core>=0.1", "llama-index-core>=0.10"]
+dev = ["pytest>=7.0", "pytest-cov", "ruff"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
