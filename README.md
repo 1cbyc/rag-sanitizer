@@ -15,6 +15,19 @@ This creates a security boundary problem: your model obeys system/developer inst
 
 `rag-sanitizer` adds a defensive preprocessing layer at ingestion time. It scans raw text, emits structured threat signals, computes a composite risk score, and sanitizes malicious segments before chunking and embedding.
 
+
+## How I use it
+
+```bash
+cd rag-sanitizer
+python -m venv .venv
+source .venv/bin/activate
+pip install -U pip
+pip install -e ".[dev,all]"
+pytest --cov=rag_sanitizer --cov-report=xml -v
+ruff check rag_sanitizer tests
+ruff format --check rag_sanitizer tests
+```
 ## Install
 
 ```bash

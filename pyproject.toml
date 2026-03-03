@@ -5,7 +5,7 @@ description = "Scan RAG documents for hidden prompt injections, invisible text a
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.9"
-authors = [{ name = "KoreShield", email = "oss@koreshield.com" }]
+authors = [{ name = "KoreShield", email = "ei@koreshield.com" }]
 keywords = ["rag", "llm", "security", "prompt-injection", "vector-database", "langchain", "llamaindex"]
 classifiers = [
   "Development Status :: 4 - Beta",
