@@ -1,9 +1,7 @@
 # rag-sanitizer
 
 [![PyPI version](https://img.shields.io/pypi/v/rag-sanitizer.svg)](https://pypi.org/project/rag-sanitizer/)
-[![Python versions](https://img.shields.io/pypi/pyversions/rag-sanitizer.svg)](https://pypi.org/project/rag-sanitizer/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://github.com/koreshield/rag-sanitizer/actions/workflows/ci.yml/badge.svg)](https://github.com/koreshield/rag-sanitizer/actions/workflows/ci.yml)
 
 Scan your RAG documents for hidden prompt injections, invisible text attacks, and data exfiltration payloads before they enter your vector database.
 
