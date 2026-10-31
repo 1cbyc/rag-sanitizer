@@ -1,3 +1,5 @@
+> **Licensing update (31 October 2026):** The current policy requires prior written permission for reuse and a separate agreement for AI training. See [LICENSE](LICENSE). Earlier grants remain valid for previously licensed material; [LICENSE.previous](LICENSE.previous) preserves those terms. Any older license descriptions below describe the previous policy. Contact [ei@nsisong.com](mailto:ei@nsisong.com).
+
 # rag-sanitizer
 
 [![PyPI version](https://img.shields.io/pypi/v/rag-sanitizer.svg)](https://pypi.org/project/rag-sanitizer/0.1.0/)
